@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookhive</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f3ef;
+    color: #352b45;
+    margin: 0;
+}
+
+header {
+    background: white;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 34px;
+    font-weight: bold;
+    color: #664497;
+    text-shadow: 2px 3px 2px #c5b4e8;
+}
+
+nav a {
+    color: #352b45;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    text-shadow: 2px 3px 2px #d4c4ed;
+}
+
+.intro {
+    color: #514663;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Main Book Image */
+
+.garden-image {
+    position: relative;
+    height: 470px;
+    border-radius: 14px;
+    overflow: hidden;
+    background:
+    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+    url("l.png") center/cover no-repeat;
+}
+
+/* Permanent labels on image */
+
+.image-label {
+    position: absolute;
+    background: rgba(255,255,255,.92);
+    color: #503576;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    box-shadow: 0 3px 12px #0002;
+}
+
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Matching buttons */
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 25px 0 35px;
+}
+
+.button-group a {
+    display: inline-block;
+    background: #664497;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+.button-group a:hover {
+    background: #a17bc8;
+}
+
+/* Content sections */
+
+.content-section {
+    background: white;
+    padding: 28px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000a;
+    scroll-margin-top: 20px;
+}
+
+.content-section h2 {
+    color: #664497;
+    margin-bottom: 12px;
+}
+
+.content-section p {
+    line-height: 1.8;
+    color: #655d70;
+}
+
+.content-section ul {
+    margin: 12px 0 0 22px;
+    line-height: 1.9;
+    color: #655d70;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #68756b;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .garden-image {
+        height: 380px;
+    }
+
+    .image-label {
+        font-size: 12px;
+        padding: 9px 10px;
+    }
+
+    .button-group a {
+        padding: 12px;
+        font-size: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <p id="logo">Bookhive</p>
+</header>
+
+<main class="container">
+
+    <h1>Welcome to Bookhive</h1>
+
+    <p class="intro">
+        Discover, read and explore thousands of books
+        with our digital library and book subscription services.
+    </p>
+
+    <!-- Main image with five labels -->
+
+    <div class="garden-image">
+
+        <a href="#books" class="image-label top-left">
+            Explore Books
+        </a>
+
+        <a href="#subscription" class="image-label top-right">
+            Subscriptions
+        </a>
+
+        <a href="#about" class="image-label center">
+            About Us
+        </a>
+
+        <a href="#services" class="image-label bottom-left">
+            Our Services
+        </a>
+
+        <a href="#help" class="image-label bottom-right">
+            Reading Help
+        </a>
+
+    </div>
+
+    <!-- Navigation buttons -->
+
+    <div class="button-group">
+        <a href="#books">Explore Books</a>
+        <a href="#subscription">Subscriptions</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#help">Reading Help</a>
+    </div>
+
+    <!-- About Us -->
+
+    <section class="content-section" id="about">
+        <h2>About Us</h2>
+        <p>
+            Welcome to Bookhive! Bookhive is a digital library
+            platform designed to make reading simple, easy and
+            accessible for everyone. We provide a wide collection
+            of digital books across different categories such as
+            fiction, science, technology, education and history.
+
+            Our platform allows readers to explore books, access
+            digital reading materials and enjoy convenient book
+            subscription services. Our aim is to encourage reading
+            habits and provide knowledge through technology.
+
+            At Bookhive, we believe that every book opens the door
+            to new ideas and opportunities. Our mission is to make
+            reading more enjoyable and accessible anytime and
+            anywhere.
+        </p>
+    </section>
+
+    <!-- Explore Books -->
+
+    <section class="content-section" id="books">
+        <h2>Explore Books</h2>
+        <p>
+            Discover a wide variety of digital books for
+            learning, entertainment and personal development.
+        </p>
+        <ul>
+            <li>Fiction and Story Books</li>
+            <li>Science and Technology Books</li>
+            <li>Educational and Academic Books</li>
+            <li>History and Biography Books</li>
+            <li>Self-Development Books</li>
+        </ul>
+    </section>
+
+    <!-- Subscription -->
+
+    <section class="content-section" id="subscription">
+        <h2>Book Subscription Services</h2>
+        <p>
+            Enjoy convenient access to digital books through
+            our subscription services.
+        </p>
+        <ul>
+            <li>Monthly Book Subscription</li>
+            <li>Yearly Book Subscription</li>
+            <li>Unlimited Digital Reading Plans</li>
+            <li>Personalized Book Recommendations</li>
+            <li>Access to New and Popular Books</li>
+        </ul>
+    </section>
+
+    <!-- Services -->
+
+    <section class="content-section" id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Digital Library Access</li>
+            <li>Online Book Reading</li>
+            <li>Book Search and Categories</li>
+            <li>Book Subscription Management</li>
+            <li>Personalized Reading Suggestions</li>
+        </ul>
+    </section>
+
+    <!-- Reading Help -->
+
+    <section class="content-section" id="help">
+        <h2>Reading Help</h2>
+        <p>
+            Get support and guidance to enjoy a better
+            digital reading experience.
+        </p>
+        <ul>
+            <li>How to create a Bookhive account</li>
+            <li>How to search and select books</li>
+            <li>How to access digital books</li>
+            <li>How to subscribe to reading plans</li>
+            <li>How to manage your subscription</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p id="copyright">
+        &copy; All Rights Reserved by Bookhive |
+        Explore Knowledge, One Book at a Time
+    </p>
+</footer>
+
+</body>
+</html>
